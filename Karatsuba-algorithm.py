@@ -6,6 +6,7 @@ import math
 start = time.time()
 def fourDigit(v):
     num = input("Введите "+v+"= 4-х значное число: ")
+    # if len(num) == 4 and num.isdigit():
     if len(num) >= 4:
         print("Принято", num)
         return num
