@@ -13,11 +13,11 @@ def selectionSort(arr):
        arr[i] = arr[maxpos]
        arr[maxpos] = temp
 if __name__ == "__main__":
-    start = time.time()
     for i in range(8):
         x = int(input(''))
         arr.append(x)
     # arr = [5,4,1,8,7,2,6,3]
+    start = time.time()
     selectionSort(arr)
     print(arr)
     end = time.time() - start
