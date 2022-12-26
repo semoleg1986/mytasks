@@ -4,6 +4,8 @@ def mergeSort(arr):
         m = n//2
         l = arr[:m]
         r = arr[m:]
+        print(l)
+        print(r)
         mergeSort(l)
         mergeSort(r)
         i=j=k=0
@@ -25,7 +27,13 @@ def mergeSort(arr):
             j += 1
             k += 1
 
-if __name__ == "__main__":
+def main():
+    import time
+    start = time.time()
     arr = [5,4,1,8,7,2,6,3]
     mergeSort(arr)
     print(arr)
+    end = time.time() - start
+    print('время: ',end)
+if __name__ == "__main__":
+    main()
